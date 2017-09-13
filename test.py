@@ -1,0 +1,6 @@
+print('____')
+print('\\')
+print(' \\')
+print(' /')
+print('/')
+print('\u0305\u0305\u0305\u0305')
