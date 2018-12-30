@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1504eb4-2804-4919-9af6-5b4cc7565930" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/calc_rewrite/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc_rewrite/display_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc_rewrite/evaluator.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calc_rewrite/pi_calc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calc_rewrite.py" beforeDir="false" afterPath="$PROJECT_DIR$/calc_rewrite.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calc_rewrite.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +17,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/calc_rewrite.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calc_rewrite/evaluator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="93" column="17" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
+            <state relative-caret-position="353">
+              <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+              <folding>
+                <element signature="e#28#39#0" expanded="true" />
+                <element signature="e#96#445#0" />
+                <element signature="e#504#920#0" />
+                <element signature="e#61#73#0" />
+                <element signature="e#93#105#0" />
+                <element signature="e#126#138#0" />
+                <element signature="e#158#218#0" />
+                <element signature="e#238#251#0" />
+                <element signature="e#865#1060#0" />
+                <element signature="e#1083#1105#0" />
+                <element signature="e#1155#1191#0" />
+                <element signature="e#1228#1666#0" />
+                <element signature="e#1703#2198#0" />
+                <element signature="e#2229#3032#0" />
+                <element signature="e#3069#3259#0" />
+                <element signature="e#3292#3528#0" />
+                <element signature="e#3553#4285#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/calc_rewrite/display_manager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/calc_rewrite/pi_calc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,6 +91,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/calc_rewrite.py" />
+        <option value="$PROJECT_DIR$/calc_rewrite/gui.py" />
+        <option value="$PROJECT_DIR$/calc_rewrite/display_manager.py" />
+        <option value="$PROJECT_DIR$/calc_rewrite/pi_calc.py" />
+        <option value="$PROJECT_DIR$/calc_rewrite/evaluator.py" />
       </list>
     </option>
   </component>
@@ -60,7 +108,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -68,14 +115,25 @@
               <item name="PiCalc" type="b2602c69:ProjectViewProjectNode" />
               <item name="PiCalc" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PiCalc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PiCalc" type="462c0819:PsiDirectoryNode" />
+              <item name="calc_rewrite" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/calc_rewrite" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -89,7 +147,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.calc_rewrite">
+  <component name="RunManager" selected="Python.pi_calc">
     <configuration name="calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PiCalc" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -123,7 +181,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calc_rewrite.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calc_rewrite/evaluator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pi_calc" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PiCalc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/calc_rewrite" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/calc_rewrite/pi_calc.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,6 +213,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pi_calc" />
         <item itemvalue="Python.calc_rewrite" />
         <item itemvalue="Python.calc" />
       </list>
@@ -153,8 +233,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-2" width="1920" height="1034" extended-state="7" />
-    <editor active="true" />
+    <frame x="0" y="-2" width="1920" height="1034" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49852508" visible="true" weight="0.18133895" />
       <window_info id="Structure" order="1" sideWeight="0.5014749" side_tool="true" weight="0.18133895" />
@@ -190,10 +269,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/calc_rewrite.py">
+    <entry file="file://$PROJECT_DIR$/calc_rewrite/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_rewrite/evaluator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="12" selection-end-line="93" selection-end-column="17" />
+        <state relative-caret-position="353">
+          <caret line="152" lean-forward="true" selection-start-line="152" selection-end-line="152" />
+          <folding>
+            <element signature="e#28#39#0" expanded="true" />
+            <element signature="e#96#445#0" />
+            <element signature="e#504#920#0" />
+            <element signature="e#61#73#0" />
+            <element signature="e#93#105#0" />
+            <element signature="e#126#138#0" />
+            <element signature="e#158#218#0" />
+            <element signature="e#238#251#0" />
+            <element signature="e#865#1060#0" />
+            <element signature="e#1083#1105#0" />
+            <element signature="e#1155#1191#0" />
+            <element signature="e#1228#1666#0" />
+            <element signature="e#1703#2198#0" />
+            <element signature="e#2229#3032#0" />
+            <element signature="e#3069#3259#0" />
+            <element signature="e#3292#3528#0" />
+            <element signature="e#3553#4285#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_rewrite/display_manager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calc_rewrite/pi_calc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-end-line="4" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
