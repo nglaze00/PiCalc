@@ -29,22 +29,40 @@ ops = {"+": add,
        "*": mult,
        "/": div,
        "^": pow}
+digits = "0123456789."
 
-
-def digit_type(digit):
-    if digit in "0123456789":
+def element_type(element):
+    if element[0] in "0123456789.":
         return "num"
-    if digit in "+-*/^":
+    if element[0] in "+-*/^":
         return "op"
-    if digit in "(":
+    if element[0] in "(":
         return "("
-    if digit in ")":
+    if element[0] in ")":
         return ")"
 
 
 def operate(first_op, second_op, operator):
     return operator(first_op, second_op)
 
+def collapse(expression):
+    """
+    :return: expression, with all multi-digit numbers collapsed down to a single index
+    """
+    num = ""
+    i = 0
+    while i < len(expression):
+        if expression[i] in digits:
+            num += expression[i]
+            del(expression[i])
+        else:
+            if num:
+                expression.insert(i, num)
+                num = ""
+            i += 1
+    if num:
+        expression.append(num)
+    return expression
 
 def postfix(expression):
     """
@@ -62,7 +80,7 @@ def postfix(expression):
     res = []
     infix = list(expression)
     for token in infix:
-        if token in "0123456789":           #fix for multi-digit numbers / decimals
+        if token[0] in "0123456789.":           #fix for multi-digit numbers / decimals
             res.append(token)
         elif token == "(":
             opstack.append(token)
@@ -79,22 +97,26 @@ def postfix(expression):
     while opstack:
         res.append(opstack.pop())
     return res
-def eval(postfix):
+def eval(str_exp):
     """
 
     :param postfix: user-input expression converted to postfix
     :return: evaluted expression
     """
+    expression = postfix(collapse(str_exp))
     operands = []
     print(postfix)
     for token in postfix:
         if token in "+-*/^":
             if len(operands) < 2:
                 return "error: invalid input"
-            res = operate(operands.pop(), operands.pop(), ops[token])
+            res = operate(float(operands.pop()), float(operands.pop()), ops[token])
             operands.append(res)
+        else:
+            operands.append(token)
+    print(operands)
     if len(operands) != 1:
         return "error: invalid input"
     return operands[0]
 
-print(eval(postfix("1+1")))
+print (eval("1+1"))
